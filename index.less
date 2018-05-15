@@ -1,0 +1,121 @@
+
+@import '../../agrisz-params/1.0.0/common.less';
+.img-wrap {
+		padding: 10px;
+		width: 100%;
+		box-sizing: border-box;
+		border-top: 1px solid #cbcbcb;
+		background: @assistant-bg;
+  	user-select: none;
+  	overflow: hidden;
+  		.img-target {
+	  		top: 0;
+	  		left: 0;
+	  		cursor: move;
+	  		width: 100%;
+	  		-webkit-user-select: none;
+	  		-moz-user-select:none;
+	  	}
+	  	.img-ori{
+	  		top: 0;
+	  		left: 0;
+	  		position: absolute;
+	  		top: 0;
+	  		left: 0;
+	  		z-index: -1000;
+	  		opacity: 0;
+	  	}
+  	
+  	
+		.zoom-big-btn {
+			.adv-height(30px);
+			.adv-font-large();
+			.adv-border-right-radius();
+			display: inline-block;
+			width: 30px;
+			text-align: center;
+			top: 12px;
+			right: 10px;
+			cursor: pointer;
+			background: #fff;
+			border: 1px solid @border-color;
+			
+			&:hover{
+				color: @theme-hover-fc;
+			};
+		}
+		.zoom-small-btn {
+			.adv-height(30px);
+			.adv-font-large();
+			.adv-border-left-radius();
+			display: inline-block;
+			width: 30px;
+			text-align: center;
+			top: 12px;
+			right: 40px;
+			cursor: pointer;
+			background: #fff;
+			border: 1px solid @border-color;
+			&:hover{
+				color: @theme-hover-fc;
+			};
+		}
+		.recover-img-btn {
+			height: 32px;
+			line-height: 30px;
+			.adv-font-normal();
+			box-sizing: border-box;
+			padding: 0 14px;
+			border-radius: 4px;
+			display: inline-block;
+			text-align: center;
+			top: 12px;
+			right: 80px;
+			color: #8f8d8b;
+			cursor: pointer;
+			background: #fff;
+			border: 1px solid @border-color;
+			&:hover{
+				color: @theme-hover-fc;
+			};
+		}
+		.scale-display {
+			.adv-height(30px);
+			.adv-font-small();
+			display: inline-block;
+			background: black;
+			border-radius: 4px;
+			padding:0 16px;
+			opacity: 0;
+			color: white;
+			top: 93%;
+  		left: 50%;
+  		.adv-trans-translate(-50%,-50%);
+		}
+
+		.transimg-pop-animation-out {
+	   .adv-animation(popfadeout;.38s;1;forwards);
+	  }
+	  .transimg-pop-animation-in {
+	   .adv-animation(popfadein;0.001s;1;forwards);
+	  }
+		
+		@keyframes popfadeout {
+		  0% {
+		   	opacity: 0.6;
+		  }
+		  
+		  100% {
+		    opacity: 0;
+		  }
+		}
+
+		@keyframes popfadein {
+		  0% {
+		   	opacity: 0;
+		  }
+		  100% {
+		    opacity: 0.6;
+		  }
+		}
+	}

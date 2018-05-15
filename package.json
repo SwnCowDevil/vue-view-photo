@@ -1,0 +1,11 @@
+{
+  "name": "agrisz-viewphoto",
+  "version": "1.0.0",
+  "description": "view photo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "sunweinan",
+  "license": "ISC"
+}
